@@ -44,3 +44,45 @@ Frontend
  - frontend/src/components/Comments
      - add error boundry here as well. it's currently used under Songs but it's dev facing component so it might be used as a single component in the future
      - /index.tsx::21 <-- remove the unncesssary loading check (it's handled by suspense already
+
+
+# Original Task:
+
+### Description
+
+The development team is assigned to design and develop a new service. The marketing team has named the service «SongBook». The service kickstarts a community of people interested in songs by enabling authenticated users to view information about songs and discuss them through comments.
+
+The application should be structured in three parts:
+
+    A remote data store that stores information about the songs, the users and their comments.
+    A backend application that exposes a RESTful API to manage users, songs and comments.
+    A frontend application, that uses the API exposed by the backend, to authenticate users and present them with a responsive interface to view information about songs, add new songs and add comments about a song.
+
+### Technology stack
+
+    Development progress and iterations are tracked through this Github repository.
+    The backend application must be built with Python3 using the FastAPI web framework.
+    The frontend application should be built with Vue or a React-based framework.
+    The storage backend we use in production is a Postgres database, but feel free to use the database system you’re most comfortable with.
+    You are free to use any other tool or library you see fit for the application.
+
+### Requirements
+
+    The users need to register and authenticate before using the application.
+    Authenticated users can view information about songs and their comments.
+    Authenticated users can add new songs.
+    Authenticated users can add comments to any song.
+    Authenticated users can delete their accounts.
+    Authenticated users can delete their comments.
+    Authenticated users see the list of songs they have added on the homepage.
+    Authenticated users can use a CLI tool like curl to query the API and do all actions above.
+
+### Other notes
+
+    We do not expect a rich data model for the users, the songs and any other entity in the system. Basic information like username and email, and title, artist and the release date is good enough.
+    There is no search functionality. We assume that users know the URL of a song to view the song’s information and comments.
+    There is no need to send emails or verify user email addresses during registration.
+    We expect a responsive design, but otherwise basic look and feel. We do expect proper usage of HTML elements.
+    The frontend application should dynamically validate user input.
+    Your design and code should meet the requirements above, be well structured and documented to allow for flexibility and future extensibility.
+
